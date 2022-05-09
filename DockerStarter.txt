@@ -1,0 +1,45 @@
+Docker Pull Fedora
+# Pulls Minimal requirments and defaulty the Latest version #
+
+docker run fedora
+# run means it creates a new container #
+
+Docker --help
+# Help #
+Docker Run --help
+
+docker run fedora echo Hello World
+# runs docker containers and echos hello world in container and in terminal #
+
+--tty -t
+# sudo commands #
+
+-i
+# integrated wont kick you out of container #
+
+docker run -i -t fedora
+# you deploy docker with fedora and you stay in container #
+
+
+docker run -d jpetazzo/clock
+# runs in background #
+
+docker PS
+# list containers #
+
+--name
+# set name for container #
+
+docker stop DOCKERID
+# shutdown #
+
+docker kill DOCKERID
+# stop directly #
+
+docker logs -f -taill 3 CONTAINERID 
+# -f = folow log output 
+-taill last 3 rules#
+
+
+
+
