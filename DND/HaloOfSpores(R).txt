@@ -1,0 +1,4 @@
+Halo of Spores
+a creature you can see moves into a space within 10 feet of you or starts its turn there
+-> reaction 1d4 necrotic damage to that creature unless it succeeds on a Constitution saving throw against your spell save DC. 
+-> The necrotic damage increases to 1d6 at 6th level, 1d8 at 10th level, and 1d10 at 14th level.
