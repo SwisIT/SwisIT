@@ -1,0 +1,33 @@
+Certificates work on FQDN not IPs
+
+not Self Signed
+	Reduction of Administrative Overhead
+	InBuild Trust to Endpoints
+		Browsers
+		IP Phones
+	Security
+
+3CX requires an FQDN in order to be set up. Using an FQDN makes connecting remote 3CX Apps and endpoints seamless. It's also more secure, since all remote connections will be via HTTPS using SSL certificates.
+
+
+Fortunately 3CX handles all of this for you. 3CX will set up an FQDN for you with the subdomain of your choice, and will also create and automatically configure Let’s Encrypt SSL certificates for it.
+
+
+This will provide secure connections for all Browsers and Remote IP Phones connecting to your server, over the Internet.
+
+----
+
+Static vs Dynamic IPs
+	Availablility & Reachablility
+	DNS
+
+3CX Domain Service
+	Free publix FQDN
+	Free trusted SSL Cert
+	Support for Dynamic IP's
+
+Earlier in this module, we mentioned that having a Static Public IP address is recommended. It is possible to have a Dynamic IP, but when your IP changes, you will experience some downtime on your PBX, for any calls to and from outside numbers or remote Apps. This is due to the time it takes for the new IP to become known to the outside world. This process is called DNS propagation. This is why we only recommend using a Dynamic IP for testing purposes.
+
+
+If you are using a Dynamic IP, be sure to use a 3CX supplied FQDN, as 3CX will automatically update your FQDN’s DNS records when it detects a new Public IP Address is in use. 3CX will also keep your SSL certificate and FQDN active, as long as a maintenance agreement is active on a perpetual license key, or an annual key is kept current.
+

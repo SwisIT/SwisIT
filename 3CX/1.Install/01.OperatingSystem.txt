@@ -1,0 +1,8 @@
+Windows10(Pro or Enterprice) Windows Server2016+2019
+3CX can be installed on variety of Operating Systems. The supported Windows versions are Windows 10, or if you prefer a Windows Server Operating System, anything newer than Microsoft Server 2016.
+
+Linux Debian 10(amd64 arch)
+If you want to install 3CX on Linux, you can do so on Debian 10 Buster by using the 3CX ISO, which will install both the Operating System, and 3CX.
+
+
+Bear in mind that all these Operating Systems must be of a 64-bit architecture. 3CX cannot be installed on a 32 bit operating system.

@@ -1,0 +1,18 @@
+Port Preservation
+
+Internal Source Port = External Source Port
+
+Protocol (SIP/SDP) defines the port -> Not The Transport Header (Unique to Voip)
+	Ensures Connectivity
+	Eliminates Destination Implementations
+
+
+Another important characteristic a Firewall must have, is Port Preservation.
+
+What this means is that when an internal entity sends a packet through the firewall, the Firewall must allow this through WITHOUT changing the source port.
+
+Although this may sound like an obvious thing, a lot of Firewall have features like “Source Port Remapping” which does exactly this, purposely change the Source IP Port.
+
+This is usually not a problem for other protocols, but SIP and SDP are kind of unique in this sense. To get a bit more technical on this, a lot of other protocols rely on the source port that is found in the Transport Header, so if this is changed by the firewall that is OK.
+
+SIP on the other hand also has port information inside the actual payload, and this port information must match that found in the Transport Header. If they do not match, there is a high probability that there will be connectivity issues.

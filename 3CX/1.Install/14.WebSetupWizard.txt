@@ -1,0 +1,48 @@
+Extention Lenght
+	Not Changeable
+	External DIDs notsame as Internal Extentions!
+
+
+Next, you must choose the Extension Digit Length of the PBX.
+
+This is a very important decision to make, as this is something that can never be changed unless you reinstall and configure the system from scratch.
+
+A backup and restore, will restore the previous extension digit length. Always factor in future growth when selecting the extension digit length.
+
+
+
+
+Administator Email
+	Recieves:
+		Update Information
+		Backup & Restore Progress
+		Info & Warning of System
+Mail Server
+	3CX SMTP Server used for installation
+	Custom SMTP & Micrsoft 365 can be configured after installation(Pro/Ent)
+	Sends:
+		Welcome Mails
+		Faxes
+		Voicemails
+		Missed Call Notification
+
+An email address is required, to which the system will send important notifications like system update information, backup and restore progress, various system warnings, and informational notifications.
+
+3CX uses the SMTP protocol to send the notifications to the admin, as well as a variety of other emails, like Welcome Emails sent to users once their account is created, incoming faxes which are converted to PDF and sent, as well as Voicemail and Missed Call notifications.
+
+The 3CX SMTP server will be used during the installation phase. If you are activating a Professional or Enterprise license key, the option to define a custom SMTP server or Microsoft 365 will not be available during the installation phase, but can be configured after the installation has been completed and you have logged in to the Management Console.
+
+
+Country
+	Set Voicemail Number
+	Allows Calls to Country of installation
+
+Timezone
+	Sets OS Timezone(Linux Only)
+		Set system time maually on Windows
+	Sets Default TimeZone for IP Phones
+
+You will be prompted to enter the Default Time Zone that your desk phones are going to use. This will not affect the Reports and the Time Scheduling automation, as these use the System Time. However with the Linux version, the system time will also be set at an Operating System level, making it a lot easier to manage the server time. With the Windows edition, this will still need to be set manually.
+
+You will also have to choose the country the installation is going to be operating in. This will then allow calls to be made to numbers in that country, in an E164 format. The Voicemail Number is also set, according to the country. The default voicemail number of 3CX is 999, but if a country uses this number as an Emergency Number, the voicemail number will be set to 666. This is the case, for example, in the United Kingdom, and Singapore.
+

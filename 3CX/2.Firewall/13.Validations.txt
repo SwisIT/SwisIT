@@ -1,0 +1,74 @@
+Validation
+
+Once you have done your firewall configuration, it is now time to check if the firewall configuration has been done correctly. 3CX provides an inbuilt tool to check your firewall configuration. This is called the Firewall Checker.
+
+What this does is check if the ports have indeed been opened and provides a status.
+
+Green means that the port has been successfully opened, or
+
+Red means that the port has not been opened, in which case you must check your firewall configuration again.
+
+In order for 3CX to consider the firewall properly configured, the firewall checker should pass with a 100% pass rate. Anything less will be considered a failure.
+
+To run the Firewall Checker, log into your Management Console and in the Dashboard select the Firewall option. In the screenshot it is shown as red.
+
+It is worth pointing out that only UDP ports are checked.
+
+This means that it cannot check the SIP and Tunnel TCP traffic. It will also not be able to check the status of the HTTPS port.
+
+The firewall checker will stop the PBX services to perform the tests, and restart them automatically when it finishes. Please be careful when performing this test on a live system, as any active calls will be dropped.
+
+--
+
+All Failed
+
+Here you can see an example of the Firewall Checker, which was run on a system that seems to fail all of the tests. This is clearly stated in the results.
+
+The reason of the failure is stated, and links are provided to help you troubleshoot the issue.
+
+--
+
+This means that either the firewall has not been configured at all, or the configuration has been done incorrectly.
+
+In this case, if you do not know how to proceed, you should contact the Support Team of your Firewall manufacturer so that they can help you with the procedure to open the ports needed, properly.
+
+As this may require special knowledge of your Firewall device, the 3CX Support Team will not be able to help you with this process.
+
+Also there is no point in troubleshooting any issues related to VoIP Providers or Remote Extensions just yet. The issue is an incorrect configuration of the firewall. Once you get the firewall configured correctly and the firewall checker passes, then see if your issue remains.
+
+Now, if this is a new installation, there is no reason proceeding with creating and provisioning VoIP Providers, Bridges or Remote Extensions until the failed Firewall Checker has passed.
+
+--
+
+This is another example of a Firewall Checker result.
+
+This is not a complete fail like before, but it is neither a complete success.
+
+As we can see, here the SIP Server port, 5060 and Tunneling Proxy port, 5090 have passed while all others have failed. This is still considered a failed Firewall Check, but we are on the right track!
+
+--
+
+The same procedure applies as before. Talk with your firewall manufacturer if you require assistance in the configuration before proceeding any further.
+
+In this example, your remote entities will connect but there will be an issue with audio.
+
+--
+
+So what has been checked in the firewall checker?
+
+Full Cone NAT has been successfully configured and Port Preservation is correct.
+
+SIP ALG has also been tested by the Firewall checker and has not been detected, so it is considered to be disabled.
+
+Also, remember that we mentioned that the ports are not checked for TCP, so please ensure the ports that require TCP have been opened correctly.
+
+You can now start configuring the PBX to accept connections from the outside world.
+
+--
+
+The SIP ALG test is integrated in the firewall test. If it is disabled, it will give a Green result.
+
+If it is enabled and detected, it will give a “detected” result. You will need to configure your firewall to disable this.
+
+If you get a “failed” result, this means that the test has not been completed successfully. The 3CX Communications System has not been able to communicate with the SIP ALG detector to get a pass or fail response. This does not mean that SIP ALG is enabled on your network. Please try the test again.
+

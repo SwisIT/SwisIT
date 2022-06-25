@@ -1,0 +1,4 @@
+Linux OS only for 3CX
+No DNS or VPN
+
+When installing on a Linux Operating System, the installation process automatically installs all necessary updates and the updates of the operating system are taken care of by 3CX, so no extra steps are required. The only requirement is that no other software is installed. It must dedicated for use by 3CX.

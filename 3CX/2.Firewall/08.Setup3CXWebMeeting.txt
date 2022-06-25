@@ -1,0 +1,23 @@
+Inbound NAT Port Required
+
+HTTPS Port 5001 TCP
+	meeting info from 3CX server
+
+
+Allow Outbound Traffic (If restricted)
+	WMR Server: 	Used to choose MCU
+		wmr.3cx.net
+	MCU Server:		To create the meeting, Get the recording, etc.
+		Multiple Servers per region
+		IPs change regularly
+
+WebMeeting is another great feature 3CX offers. In order for participants to create and join meetings from remote networks, the HTTPS port of 3CX needs to be opened for TCP traffic.
+
+Participants will use this port to get the Meeting Information but once they have joined the meeting, the Audio, Video and Text messages exchanged by the participants will be through the 3CX MCU Cluster (Media Control Unit) which is hosted remotely from 3CX.
+
+
+Additionally, if you restrict outgoing traffic from your network, you must allow outbound traffic to the WMR (WebMeeting Router) and MCU servers.
+
+These IPs may change as MCUs are constantly added and removed. You can find the IPs of MCU Servers at any time by looking up the FQDN of the host qos.3cx.net which defines the MCU Servers.
+
+If you don’t restrict any Outbound Traffic from your network, you are ready to go!

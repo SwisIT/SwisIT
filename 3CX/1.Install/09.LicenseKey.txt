@@ -1,0 +1,16 @@
+All installs require a license key
+3Types of licenses
+	Standard:	3cx FQDN and SMTP only
+	Pro: 		Recording, Queues, Bridges, Reports, CRM, Hotel
+	Enterprice:	Advanced Recording control, Custom Phone Logo, Standby Lincence, 			 Failover
+
+
+During the installation of 3CX, you will be asked to provide a License Key. 3CX currently offers 3 types of License Keys. These are:
+
+The Standard Edition. The Standard edition has no limitation on the amount of VoIP Providers, Gateways and extensions you can create. You can make use of most of the basic features 3CX has to offer, however, there are some limitations. A 3CX FQDN, SSL certificate, and SMTP Server will need to be used.
+
+The Pro Edition. The Pro Edition will allow for more features to be used, which includes, amongst others, Queues, Bridging 2 or more PBXs together, CRM integration and Hotel services.
+
+The Enterprise Edition. The Enterprise Edition activates all the features of 3CX. It will allow your license to be activated on another server (when required), opening the opportunity for Failover solutions and scenarios. Other features, which will benefit a corporate admin, giving them access to IP Phone customisation as well as increased control of call recordings.
+
+If you don't already have one, you can get a FREE Annual License key. This license will have the Standard edition features enabled. You can get the free license key by filling in the form found in the link during the installation process. Having a License Key before beginning the installation process is important, as it is one of the first things the installer will be asking for.

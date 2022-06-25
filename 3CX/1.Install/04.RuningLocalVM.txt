@@ -1,0 +1,11 @@
+Tested Hypervisor Platforms:
+Microsoft Hyper V(> 2016)
+VMware ESXi (> 6.5)
+KVM (> 2.8)
+Citrix XenServer (> 7.0)
+
+If you decide to install 3CX in a Virtualized environment, not all Hypervisor Platforms may be up to the task. For this reason, we advise that you use one of the platforms which we have tested.
+
+These will provide you with a trouble-free experience and the maximum level of support from the 3CX Support Team, should any issue occur.
+
+The Virtualization platforms that have been tested are Microsoft Hyper-V, VMWare ESXi, KVM and Citrix XenServer. When using these platforms, please ensure to check, and conform to the minimum version requirements.

@@ -1,0 +1,10 @@
+Use "Yes I Will Use A 3CX Supplied FQDN"
+Enter "Hostname" for Installation
+Select 3CX Suffix(Region)
+
+
+In this module we will use a 3CX FQDN. This is an easy and reliable choice, and requires the least amount of configuration. You will be asked for your choice of hostname, as well as your preferred domain. You can choose amongst various 3CX Top Level Domains, which are separated into different regions. If the hostname is available, the installation wizard will automatically create all the necessary DNS entries, assign the FQDN to the license key, generate an SSL Certificate, download it, and apply it to the installation.
+
+When a Standard 3CX license is being used, you will not be asked to provide a custom FQDN, and this page will show up automatically. If you are using a Professional or Enterprise license, the option to use a 3CX supplied FQDN or your own will be shown.
+
+If the specific FQDN you requested is taken, you can either select a new hostname, or select a different 3CX domain.

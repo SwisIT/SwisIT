@@ -1,0 +1,15 @@
+Web Server
+	HTTPS	Default 5001
+	HTTP	Default 5000
+SIP Server 	Default 5060
+Tunnel 		Default 5090
+
+Port Config ONLY in installation
+
+At some point, the installer will also ask you which HTTP and HTTPS ports you want to use. Although the default values are 5000 and 5001, you can also choose 80 and 443 instead, as we are using the versatile NGINX Web Server for 3CX. This is assuming, of course, that no other application is using these ports, such as IIS.
+
+
+In addition to the Web server ports, you will also be asked to choose the SIP and Tunnel ports of the PBX.
+
+
+These ports can only be configured during the installation of the PBX. You are not restricted to port 5060 as the SIP port, to utilise the plug and play method of provisioning phones in 3CX.

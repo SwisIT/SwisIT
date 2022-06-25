@@ -1,0 +1,18 @@
+Fundamental Network Knowledge Required
+
+1.RFC 1918 Compliant internal Network
+	Allow HTTP access to PBX
+	SIP communication with ip adress of PBX
+
+2.Simplicity beats over Engineering
+	1 Network Interface
+	1 IP Adress
+	Disable Unused Adapters
+
+3.Wired Network Connection
+
+The network requirements of 3CX are simple. Connect the 3CX Server to the network using a wired connection. Also, if you intend to use the installation as an on-premise setup, meaning that the users and the 3CX server will be on the same LAN, then the IP addresses that this LAN uses must be in a private range as defined by RFC 1918.
+
+Using an RFC compliant addressing scheme internally allows access to the PBX via the IP Address, and not the FQDN of the PBX, as well as provisioning via HTTP locally, rather than HTTPS.
+
+3CX can be installed on a server with multiple Network Cards and can be configured to use them, however, it is recommended to NOT overcomplicate the network configuration of the server, if it's not necessary. In this module we are going to talk about how to install on a server with only 1 Network Card. This means that it must only have 1 IP address assigned to it, and you must disable all other unused Network Adapters. Just having them unplugged, or showing as “Not Connected” will not suffice.

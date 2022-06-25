@@ -1,0 +1,28 @@
+If Managed Network
+	Create A Record
+	Point to Local LAN IP of PBX
+	Select "Yes I have a DNS server..."
+	Enter A Record in the PBXconfigTool
+
+If UnManaged Networ(Router is DNS and DHCP)
+	Select "No I do not have a DNS server..."
+
+If you choose to use an Internal FQDN, create an A Record on your Local DNS Server before starting the installation process. This must point to the LAN IP Address of the 3CX Server. Then, go through the PBX configuration Wizard until you get prompted with the option to use your own managed DNS. At this point, use the option to enter your Local FQDN.
+
+If you do not want to use an Internal FQDN, just use the “Local IP” option.
+
+--
+
+When to use internal FQDN?
+	Allows Split DNS Setups(Own Domain Required)
+	Allows Failover Setup
+	Prerequisites
+		Configurable Internal DNS Server
+		Configurable Internal DHCP Server
+
+Nothing to Manage?(Router Based Network)
+	Install on Local LAN IP
+
+Contrary to the External FQDN, which is mandatory, having an Internal FQDN is not always required, and instead, you can use the Private IP address of the 3CX Server.
+
+You will, however, need an Internal FQDN if you want to have a Split DNS configuration, or configure a Failover solution. In this case you will have to provide your own Certificate during installation, and you must use a Static Public IP address, as well as a Local DNS and DHCP Server which you can configure.

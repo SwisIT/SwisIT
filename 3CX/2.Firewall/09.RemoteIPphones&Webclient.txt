@@ -1,0 +1,18 @@
+Remote IP Phones & WebClients
+
+Inbound NAT Ports Required
+	SIP: 			Default		5060 UDP/TCP
+	AUDIO:			Default		9000 - 10999 UDP
+	Provisioning: 	Default 	5001 TCP
+
+WebClient / DesktopApp / PWA
+	HTTPS: 	Default 	5001 TCP
+	AUDIO:	Default		9000 - 10999 UDP
+
+
+External IP Phones can be connected through a 3CX Session Border Controller (SBC) to the 3CX Server, but they can also be connected directly.
+
+In this case, the ports that need to be opened and forwarded are the PBX SIP Port for TCP and UDP traffic, as well as the audio ports for UDP traffic. In addition to those, the HTTPS port will need to be opened for TCP traffic, which will allow the IP Phone to retrieve information like the configuration file and the Company Phonebook.
+
+The 3CX Web Client, Desktop app and Progressive Web app (PWA) communication is done via HTTPS so the PBX Secure Web Port will need to be opened. The ports which the Web Client uses for audio are from 10500 to 10999 UDP, but these should already be opened with the default audio range of 9000 to 10999, so no extra configuration is required to get this to work.
+

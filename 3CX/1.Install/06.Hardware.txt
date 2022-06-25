@@ -1,0 +1,13 @@
+Bare Metal or VM or Cloud provider
+
+So, what are the hardware requirements? Hardware specifications primarily depend on the deployment size. You can find our suggested requirements at the link shown in the slide, or by performing a search on our website. These specifications are available for either a Bare Metal standalone machine, or within a virtualized environment locally, or in the cloud.
+
+
+Hardware requirements may differ slightly, depending on your usage scenario. Let’s go into this a little further.
+
+
+If, for example, you intend on recording the calls on your system, the size of the Hard Disk is crucial. Also, because recordings are written to the disk on the fly, you must ensure that the Hard Disk’s Read/Write speeds can cover your call recording needs. In the recordings module we will also cover the archiving of recordings, and how this will affect your disk usage.
+
+
+Hardware specs link : https://www.3cx.com/docs/recommended-hardware-specifications-for-3cx
+

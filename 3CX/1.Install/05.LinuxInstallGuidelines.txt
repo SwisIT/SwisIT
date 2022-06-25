@@ -1,0 +1,22 @@
+Hosted by 3CX
+Self Hosted
+	Amazon LightSail/AWS (EC2)
+	Digital Ocean
+	Google Cloud
+	Microsoft Azure
+	OVH
+	Any OpenStack provider
+Use 3CX ISO on
+	Bare Metal Machines
+	Local Hypervisors
+	Hosted Providers
+
+For Hosted Platforms, the ones that have been tested are Openstack with KVM - many data centres use this infrastructure including Amazon AWS with EC2 and Lightsail machines, Digital Ocean, Google Cloud Engine, Microsoft’s Azure platform and OVH. These can be deployed using the 3CX deployment wizard, which will allow you to deploy your PBX, hassle free.
+
+Any other Openstack Version 2 onwards compatible provider can also be used, but you will need to manually add the API details to link the provider to the Deployment Wizard. We cover this in more detail in the PBX Express module, in the intermediate training course.
+
+For other cloud hosting providers, you can upload the 3CX ISO to a Debian instance and deploy it directly from the ISO, just like an on premise deployment.
+
+Hosted by 3CX instances can also use the 3CX Deployment wizard from the Customer or Partner portals.
+
+The 3CX ISO can also be used for a local, bare metal machine, or a local Hypervisor.

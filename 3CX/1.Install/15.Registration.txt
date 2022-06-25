@@ -1,0 +1,17 @@
+
+Registration
+	Owner of the Key
+	Reseller: Enter Partner ID
+		Assign Key to you Partner Account
+		Set Contact Person
+	If Key has been Activated before.
+		Information is retrieved from activation server
+		if all info is present -> automatic activation
+
+
+Finally, the last step is the license activation of 3CX. If the key is new and hasn't been registered before, the license details will be requested at this stage.
+
+If you are a 3CX Reseller, in the Reseller ID field enter your 6 digit Partner ID to assign this key to your Partner Portal.
+
+If the information is already present, the PBX will automatically activate, while skipping this step.
+

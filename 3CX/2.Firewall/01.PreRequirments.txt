@@ -1,0 +1,9 @@
+
+
+In order to fully understand this module, fundamental knowledge of networks and routing is required, however we will try to explain things in the simplest way possible.
+
+If you want to try this out, you will need to have a configurable firewall. Firewalls can either be a physical device, usually appliance based, or could be a software package that you install on a server. They both ultimately serve the same purpose.
+
+Throughout this module we are going to be talking about the general configuration that needs to be done, but we are not going to go into vendor-specific settings. For this reason, you must know how to perform these settings on the hardware you are using. For the same reason, no one from the 3CX staff will ever attempt to configure your firewall for you. For information on what 3CX Technical Support covers can be found at https://www.3cx.com/ordering/
+
+We do have some sample configuration guides available as a reference, for some of the more popular Firewalls on the market which you can find from our website at the link https://www.3cx.com/docs/manual/firewall-router-configuration

@@ -1,0 +1,15 @@
+Full Windows updates + Including .Net updates
+
+If you decide to use a Windows Operating System, you must make sure that all Windows Updates have been installed, prior to starting the installation process. This includes the .NET updates, as it is crucial for the smooth operation of 3CX.
+
+Browser: Chrome, FireFox and Edge. not IE
+
+With 3CX’s Modern interface, a compatible browser is required. 3CX is entirely configured using a web browser. This can either be Google Chrome, Mozilla Firefox or the new Chromium based Microsoft Edge. Avoid using Microsoft’s Internet Explorer.
+
+No 3rd party software(exchange,ms sql, dns, vpn)
+
+The system which 3CX will be installed on, must be as free as possible of any 3rd party applications. Applications that have been known to interfere with 3CX when installed on the same machine are, Microsoft Exchange, MS SQL, DNS Server software or roles, and VPN software or adapters. As most of these packages or services exist on the network prior to the deployment of 3CX we recommend that 3CX is installed on a fresh, dedicated machine.
+
+Add exclusions for 3CX folders and network traffic
+
+Anti-Virus software packages have also been known to sometimes cause issues, so if you do have one installed, make sure you have added the necessary exceptions in its settings. That means excluding the 3CX data folders from being filtered. Also, make sure that the HTTP and HTTPS traffic is excluded from network traffic scans.

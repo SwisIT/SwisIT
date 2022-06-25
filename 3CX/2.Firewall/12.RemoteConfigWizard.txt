@@ -1,0 +1,12 @@
+Remote Configuration Wizard
+
+
+Inbound NAT Port Required
+	HTTP: Default 5015 TCP
+	Only for the duration of the host setup
+
+During the setup of the PBX using the PBXConfigTool with a browser, port 5015 will be used with TCP traffic. If you are performing this task from a remote network, you will need to have this port forwarded to the PBX. This is only required for the duration of the host setup, and will not be used during the actual everyday use of the PBX.
+
+HTTP is used in this case, as an SSL certificate has not been created just yet.
+
+If you are setting up 3CX from within the same network, you will not be required to do this specific port forwarding.

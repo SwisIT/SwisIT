@@ -1,0 +1,13 @@
+Inbount NAT Ports Required
+Tunnel Port 
+	Default:	5090 UDP/TCP
+HTTPS Port
+	Default:	5001 TCP
+
+
+If you intend on having remote users working with either a 3CX App, an IP Phone operating through an SBC, or even another PBX connected via a bridge, then the port you will need to open is the tunnel port of the PBX, which, by default is 5090 for both TCP and UDP traffic, unless changed during the installation process.
+
+The Tunnel protocol encapsulates both SIP and Audio packets so only one port is required for calls to be made and the audio to be passed through.
+
+Because the endpoints may also receive other non-SIP information such as Presence Information, Provisioning Information and the Company Phonebook, one more port must be opened. That is the HTTPS port you chose during the installation process which, by default, is 5001, and is TCP traffic.
+

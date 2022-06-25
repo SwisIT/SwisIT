@@ -1,0 +1,22 @@
+Teams Integration
+
+Inbound NAT Ports Required
+	Secure SIP: 5062 TCP
+	If Teams SBC FQDN Domain = 3CX FQDN Domain
+		-> 5061 TCP
+	AUDIO:	Default	9000 - 10999 UDP
+
+
+In order to integrate Microsoft Teams with 3CX, the Teams platform will need to communicate with the 3CX Server.
+
+There are two scenarios for the SIP communication between the 2 platforms.
+
+The Teams FQDN will need to be your own FQDN, not a 3CX Provided one, connecting with an SSL certificate issued by a Microsoft supported issuer.
+
+In the 1st scenario, your 3CX Communications System FQDN is the same as the Teams FQDN. In this case, you will be using port 5061 as the Secure SIP Port. This is TCP traffic.
+
+In the 2nd scenario, you 3CX Communications System FQDN is a 3CX Provided FQDN which is different to the Teams FQDN. In this case, you will need port 5062 for the Secure SIP communications. This is also TCP traffic.
+
+The relevant port will need to be opened on your network firewall.
+
+For Audio, Teams requires the same ports as Providers do, so you also need to open UDP ports 9000 - 10999.

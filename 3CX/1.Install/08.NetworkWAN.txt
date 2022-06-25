@@ -1,0 +1,27 @@
+Configurable Firewall
+Knowledge on how to config your firewall
+Internet Access
+	Static Ip
+	No HTTPS proxy
+	No SSL deep inspection
+	allow Outbound Traffic
+		Activation: 	Activate.3cx.com
+		Updates:		downloads-global.3cx.com
+		WebMeeting:		wmr.3cx.net
+
+Having an IP PBX like 3CX probably means that you are going to be using VoIP Providers for calls, and most likely you are also going to have Remote Extensions. We cover remote extensions in the Remote Extensions Module, in the intermediate training course.
+
+
+This means that in order for this communication to be possible, there will be some traffic traversing the firewall that sits between 3CX and the Internet. For this reason, having access to and configuring this firewall is required.
+
+
+Another requirement 3CX has, is that it must have constant and unfiltered access to the Internet. This means that any traffic 3CX sends to the 3cx.com and 3cx.net domains must not pass through a HTTPS Proxy, and the Firewall must not perform Deep Packet Inspection, at least for traffic to these specific domains.
+
+
+Failing to do this may result in problems related to activating your License Key, downloading Updates, and accessing 3CX WebMeeting.
+
+
+Also, having a Public Static IP, although not mandatory, is something to consider as this provides stability for all External Communications.
+
+
+If your network has restrictions on outgoing traffic, then the PBX will need to be exempted from this filtering, at a bare minimum, to the hosts shown here.

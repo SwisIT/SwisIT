@@ -1,0 +1,12 @@
+ALG = Application Layer Gateway(Firewall)
+	Inspects Content of Packages
+	Tampers Uncontrollably with content
+	Made for Clients NOT Servers
+
+SIP ALG is one more feature a lot of Firewalls have.
+
+What it does is try to look inside the SIP packets and alter the information. Although the intention of SIP ALG is good and it tries to solve some connectivity issues, our experience has shown that unfortunately not all implementations of it work reliably.
+
+For this reason, we recommend disabling it.
+
+Doing this can sometimes be a bit tricky and there is no consistent pattern to how this is done, and does vary from one Firewall vendor to another. If you are unsure how this feature is disabled, it is best to either contact the firewall manufacturer or look it up, in the online documentation they may provide.

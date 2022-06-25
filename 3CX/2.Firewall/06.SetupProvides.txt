@@ -1,0 +1,18 @@
+Inbound NAT Ports Required
+	SIP Port
+	Default:	5060 UDP/TCP
+Audio Ports
+	Range: 9000-10999 UDP
+	
+
+
+Now we will talk a bit more specifically about exactly which NAT ports need to be opened, depending on what External VoIP traffic you are going to be utilizing.
+
+Most of the ports we will mention in this module, as well as other modules, can be changed during the installation process. We will always be mentioning the default ports in this case. If you change any of the ports during the installation phase, you will need to modify and perform the necessary port forwarding to reflect this.
+
+SIP trunks are used in most of the deployments these days, so we will start with this. To use SIP Trunks you must open, and forward the SIP port of the PBX. This, by default is port 5060 for both TCP and UDP traffic, although this port can be changed during the installation phase.
+
+This will allow the SIP signaling from your Provider to reach 3CX. SIP Signaling, however, does not contain the actual audio payload. Audio uses a different Protocol called RTP, or Real-time Transport Protocol, which uses a different port range. This means that you must also open this port range for UDP traffic. This range is set from 9000 to 10999, and cannot be changed.
+
+The audio payload may also contain video and fax traffic, as well as the audio for calls through the Web Client, Desktop app and Progressive Web App (PWA). We will see the specific ports for the Apps shortly.
+

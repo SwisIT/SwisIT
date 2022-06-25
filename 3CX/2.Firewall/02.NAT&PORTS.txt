@@ -1,0 +1,20 @@
+Translates Public to Private IP
+Allows access or Restricts it(ACL's)
+Required to Allow connections to 3CX from:
+	Provider(s)
+	3CX Apps, 3CX SBC & Bridges
+	STUN Phones
+
+IPV6 is Supported
+	masquerading (NAT) is not supported
+	Firewall Rules (ACL) needed if used
+
+
+
+One of the most important features of a Firewall, which we are going to be talking about, is Network Address Translation (NAT). This is the way the firewall knows where to direct traffic from the outside, into the network when a certain external public IP address is contacted.
+
+This is required so that external entities like your SIP Trunks, 3CX Apps, IP Phones in a STUN environment, SBCs, and Bridges, can communicate with your 3CX Server from outside your Local LAN.
+
+Specific rules should also be set so that you can limit who can access the 3CX Server through what is called an Access Control List (ACL). Many firewalls require separate configuration of the ACL, in addition to the NAT configuration. Some firewalls automatically create these rules when the NAT configuration is done. This depends on firewall, and as each firewall is different, consult the documentation of your firewall for the proper procedure to do so.
+
+IPv6 is supported in 3CX, but IPv6 masquerading is not supported. You will need to create IPv6 firewall rules (ACLs) for all the traffic to and from the PBX, just like in IPv4, if IPv6 is being used. The ports will remain the same as in IPv4.

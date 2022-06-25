@@ -1,0 +1,15 @@
+Full Cone NAT
+
+3CX PBX requires Full Cone NAT
+Allows Incoming Traffic from uncontacted sources
+	Required for
+		VOIP Provider
+		Mobile Devices
+		Home Offices
+
+
+The type of Network Address Translation that 3CX uses is Full Cone NAT.
+
+This allows entities unknown to the Firewall to be able to contact the 3CX Server. This is especially important for VoIP Providers, as most of the times, they will try to contact your server from a large range of IPs and not just one.
+
+This is also important for remote extensions as the users may not have a static IP at home or if they are connecting on the go. Especially when travelling, a user does not need to communicate with the network admin beforehand to allow an IP into the network. Mobile workers do not even need to know their IP Address. The firewall should allow access from anywhere, on the specific ports, which we will cover shortly.

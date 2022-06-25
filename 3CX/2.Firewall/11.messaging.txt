@@ -1,0 +1,8 @@
+
+Messaging
+
+Inbound NAT Port Required
+	HTTPS: Default 5001 TCP
+
+
+If you use Facebook messaging, SMS or the 3CX Live Website chat, you will need to have the HTTPS port of the PBX opened on the firewall. This is TCP traffic.
